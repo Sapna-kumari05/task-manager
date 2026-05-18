@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 10% 8%;
+    --foreground: 180 100% 95%;
+    --card: 10 10% 12%;
+    --card-foreground: 180 100% 95%;
+    --popover: 10 10% 12%;
+    --popover-foreground: 180 100% 95%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 10 10% 8%;
+    --secondary: 280 100% 50%;
+    --secondary-foreground: 10 10% 8%;
+    --muted: 10 10% 15%;
+    --muted-foreground: 180 50% 60%;
+    --accent: 320 100% 50%;
+    --accent-foreground: 10 10% 8%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 10 10% 8%;
+    --border: 180 100% 30%;
+    --input: 180 100% 30%;
+    --ring: 180 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-glow-blue {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 30px #00f0ff;
+  }
+  .text-glow-purple {
+    text-shadow: 0 0 10px #b026ff, 0 0 20px #b026ff, 0 0 30px #b026ff;
+  }
+  .text-glow-pink {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  }
+  .text-glow-green {
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
+  }
+  .border-glow-blue {
+    box-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, inset 0 0 5px #00f0ff;
+  }
+  .border-glow-purple {
+    box-shadow: 0 0 5px #b026ff, 0 0 10px #b026ff, inset 0 0 5px #b026ff;
+  }
+  .border-glow-pink {
+    box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, inset 0 0 5px #ff00ff;
+  }
+}
